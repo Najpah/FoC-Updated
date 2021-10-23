@@ -1,0 +1,82 @@
+body{
+    margin:0;
+}
+header {
+    background-color: #d0dbd5;
+    padding: 20px;
+    text-align: center;
+  
+  }
+  /* Style the top navigation bar */
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  /* Style the topnav links */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change color on hover */
+  .topnav a:hover {
+    background-color: #990026;
+    color: black;
+  }
+  /* Create three unequal columns that floats next to each other */
+  .column {
+    float: left;
+    padding: 10px;
+  }
+  
+  /* Left and right column */
+  .column.side {
+    width: 20%;
+    background-color: #cc2020;
+  }
+  
+  /* Middle column */
+  .column.middle {
+    width: 60%;
+   background-color: #6563a8;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column.side, .column.middle {
+      width: 100%;
+    }
+  }
+  footer {
+    background-color: #6eb8bb;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  button {
+    border: none;
+    color: black;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: #a5204a
+  }
+  
+  .button onclick{background-color: #be1515;} 
+  .button onclick{background-color:#b61c1c;}

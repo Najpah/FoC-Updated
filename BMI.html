@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">    
+
+
+</head>   
+<head>
+    <style>
+    
+    html { 
+      background: url(bmi.jpg) no-repeat center fixed; 
+      background-size: cover;
+    }
+    
+    
+    </style>
+</head>
+<body>
+
+<div class = "container">
+    <div class = "check">
+        <div class = "check-header text-center">BMI CALCULATOR</div>
+        <div class = "check-body">
+            <form class= "w-50 m-auto" onsubmit="return false">
+                <div class="forn-group">
+                    <label>Weight:</label>
+                    <input type= "number" name="" placeholder="Weight in lbs" required id ="weight" class="form-control">
+                </div>
+                <div class="forn-group">
+                    <label>Height:</label>
+                    <input type= "number" name="" placeholder="Height in inches" required id ="height" class="form-control">
+                </div>
+                <div class="forn-group">
+                    <label>BMI Val:</label>
+                    <input type= "number" name="" required id ="bmival" class="form-control">
+                </div>
+                <p id="demo"></p>
+
+
+                <div>
+                    <button type ="submit" class="btn btn-success" onclick="getbmival()">Check BMI</button>
+                </div>
+
+            </form> 
+        </div>
+
+    </div>
+
+</div>    
+
+<script>
+    function getbmival(){
+        var weight = document.getElementById('weight').value;
+        var height = document.getElementById('height').value;
+        height = height * 0.025;
+        weight = weight/2.205;
+        var updatedbmival = weight/(Math.pow(height,2));
+        updatedbmival= Math.round(updatedbmival);
+        document.getElementById('bmival').value = updatedbmival;
+    
+
+        var bmiMeaning;
+
+        if (updatedbmival <= 18.5) {
+        bmiMeaning = "Underweight";
+        } else if (updatedbmival <= 25) {
+        bmiMeaning = "Normal Weight";
+        } else if (updatedbmival <= 30) {
+        bmiMeanint = "Over Weight";
+        } else {
+        bmiMeaning = "Obese";
+}
+        document.getElementById("demo").innerHTML = bmiMeaning;
+        
+        
+
+    
+    
+    }
+
+
+</script>
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body> 
+</html>
