@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Cache Memory</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #3eb42e;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: rgba(27, 95, 197, 0.288);
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="file:///C:/Users/Najmah%20Paquiul/OneDrive/Documents/FoC%20Final/index.html">Home</a></li>
+        <li><a href="file:///C:/Users/Najmah%20Paquiul/OneDrive/Documents/FoC%20Final/cachememory/map.html">Mapping</a></li>
+       
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+     
+    </div>
+    <div class="col-sm-8 text-left"> 
+      <h1>Cache</h1>
+      <p>Cache memory, also called cache, supplementary memory system that temporarily stores frequently used instructions and data for quicker processing by the central processing unit (CPU) of a computer. It holds a copy of only the most frequently used information or program codes stored in the main memory. The smaller capacity of the cache reduces the time required to locate data within it and provide it to the CPU for processing.</p>
+      <hr>
+      <h3>Levels of Memory </h3>
+    
+      <p> Level 1 or Register –
+        It is a type of memory in which data is stored and accepted that are immediately stored in CPU. Most commonly used register is accumulator, Program counter, address register etc.</p>
+      <p>Level 2 or Cache memory –
+        It is the fastest memory which has faster access time where data is temporarily stored for faster access. </p>  
+      <p>Level 3 or Main Memory –
+        It is memory on which computer works currently. It is small in size and once power is off data no longer stays in this memory. </p> 
+      <p>Level 4 or Secondary Memory –
+        It is external memory which is not as fast as main memory but data stays permanently in this memory.
+         </p>   
+         <img src="cache.png" alt="FoC"  width="1000" height="250">
+      <p> </p>   
+      <h3> Types of Cache memory</h3>
+      <p> L1 Cache: The primary or L1 cache is the fastest and the smallest. It is present inside the CPU itself and works with almost the same speed of the processors. Some L1 caches are further divided into two parts.
+
+        Data cache to store data.
+        Instruction cache to store instructions</p>
+      <p> L2 Cache:
+        The level 2 cache could both be inside or outside the processor, and there might be separate L2 caches for different cores, or all of the cores might share the same amount of L2 cache.</p>
+      <p> L3 Cache:
+        The third kind is available in only the high-performance CPUs, and works to balance and boost the working of the other 2 kinds of caches.
+        
+        It has a higher capacity, between 8 MB and 50 MB roughly, but is slower than the other two.
+        
+        </p>  
+        <img src="cache memory.png" alt="FoC"  width="1000" height="250">
+
+
+    </div>
+    <div class="col-sm-2 sidenav">
+      <div >
+        
+      </div>
+      <div >
+        <p></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  
+  <p>FUNDAMENTALS OF COMPUTING @Powered by UB</p>
+  <p> DON'T LET YOUR SCHOOLING INTERFERE WITH YOUR EDUCATION </p>
+</footer>
+
+</body>
+</html>

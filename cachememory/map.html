@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<Link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<title>Mapping</title>
+<header>
+  <h2><b>Cache Memory</b></h2>
+</header>
+
+<body>
+
+<div class="row">
+  <div class="column side">
+    <h2>Input</h2>
+    <p><button onclick="document.getElementById('Image').src='direct.png'">Direct</button></p>
+    <p><button onclick="document.getElementById('Image').src='as.png'">Associative</button></p>
+    <p><button onclick="document.getElementById('Image').src='setas.png'"> Set- Associative</button></p>
+    
+  </div>
+  
+  <div class="column middle">
+    <h2>Output</h2>
+	
+                 <img id="Image" src="direct.png" alt="Image" width= "800" height="286" align ="center">
+  
+  </div>
+  
+  <div class="column side">
+    
+  </div>
+</div>
+ 
+<footer>
+  <h3><a href="file:///C:/Users/Najmah%20Paquiul/OneDrive/Documents/FoC%20Final/cachememory/cache%20memory.html">Home</a></h3>
+  
+
+  <p> Direct Mapping: In direct mapping, an algorithm is followed and data blocks are stored in the cache memory in only some specific places or a few of the possible places. This reduces the time to search and also saves space and each block of cache memory can store only one block of data taken from the RAM. </p>
+  <p> Associative Mapping: In this method, any block of information from the primary memory (RAM) can be situated in any of the cache memory cells. Hence, the processor has to search through the entire cache memory to find out this information, but the hit rate is high.
+
+</p>
+<p> Set- Associative Mapping: This third method is a bridge between the above two. The cells in cache memory are divided into equal-sized sets. A block of data can thus be mapped in any cache line of a particular set. While this is advantageous, it is quite an expensive method of caching</p>
+  <p>FUNDAMENTALS OF COMPUTING @Powered by UB</p>
+  <p> DON'T LET YOUR SCHOOLING INTERFERE WITH YOUR EDUCATION </p>
+</footer>
+
+</body>
+</html>
